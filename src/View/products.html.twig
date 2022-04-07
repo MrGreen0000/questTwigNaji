@@ -20,8 +20,24 @@
 
    </table> 
 
+   <table>
+
+    {% for produit in produits %}
+   
+    <tr>
+    <td>{{ produit }}</td>
+    </tr>
+    
+    {% endfor %}
+
+   </table> 
+
    <pre>
-    {{ dump(product) }}
+    {{ dump(products) }}
+    </pre>
+    
+    <pre>
+    {{ dump(produits) }}
     </pre>
 </body>
 </html>
